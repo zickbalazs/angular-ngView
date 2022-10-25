@@ -9,3 +9,6 @@ footer>p{
     border:1px solid black;
     border-radius: 100%;
 }
+td>img{
+    max-height: 50px;
+}

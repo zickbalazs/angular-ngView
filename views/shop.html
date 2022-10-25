@@ -3,6 +3,7 @@
 <table class="table table-small">
     <thead>
         <tr>
+            <th>Kép</th>
             <th>Termék neve</th>
             <th>Leírás</th>
             <th>Ár</th>
@@ -11,6 +12,7 @@
     </thead>
     <tbody>
         <tr ng-repeat="product in products">
+            <td class="text-center"><img src="{{product.img}}" alt=""> </td>
             <td>{{product.itemName}}</td>
             <td>{{product.description}}</td>
             <td>{{product.price}} <small><i>Ft{{product.unit}}</i></small></td>
