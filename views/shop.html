@@ -1,0 +1,20 @@
+<h3>Termékeink</h3>
+<hr>
+<table class="table table-small">
+    <thead>
+        <tr>
+            <th>Termék neve</th>
+            <th>Leírás</th>
+            <th>Ár</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in products">
+            <td>{{product.itemName}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}} <small><i>Ft{{product.unit}}</i></small></td>
+            <td><button class="btn btn-outline-primary">Kosárba</button></td>
+        </tr>
+    </tbody>
+</table>

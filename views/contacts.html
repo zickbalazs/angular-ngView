@@ -1,0 +1,34 @@
+<h3>Kapcsolat</h3>
+<hr>
+<div class="px-3">
+    <h4>A csapat:</h4>
+    <div class="row mb-3">
+        <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="dude in teamMembers">
+            <div class="card border-dark mb-3">
+                <img src="{{dude.pic}}" class="profPic" alt="">
+                <hr>
+                <div class="card-body pt-0">
+                    <div class="card-title mt-0">
+                        <h4 class="mb-0">{{dude.name}}</h4>
+                        <h5 class="mt-0 px-3 text-muted">{{dude.pos}}</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li ng-repeat="paragraph in dude.desc">{{paragraph}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>Üzenj nekünk!</h4>
+    <form class="mb-3">
+        <div class="border border-dark rounded p-3 col-lg-5 col-md-7 col-sm-12">
+            <div class="mb-3" ng-repeat="fE in formElements">
+                <label for="" class="form-label">{{fE.name}}</label>
+                <input type="{{fE.type}}" class="form-control">
+            </div>
+            <button class="btn btn-success">Küldés</button>
+        </div>
+    </form>
+</div>
